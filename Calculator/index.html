@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Challenge</title>
+    <style>
+        body {
+            display: flex; 
+            justify-content: center;
+            align-items: center; 
+            flex-direction: column;
+            background-color: #eaeaea;
+        }
+        h1 {
+            color: rgb(132, 0, 165); 
+            font-family: cursive; 
+            font-size: 5rem;
+        }
+        h3 {
+            color: rgb(132, 0, 165); 
+            font-family: cursive; 
+            font-size: 2rem; 
+            margin-top: -3rem;
+        }
+        .top {
+            margin: 0 0 2rem;
+            position: relative;
+        }
+        .bot {
+            margin-left: 25rem;
+            position: relative;
+            right: -3%;
+        }
+        input {
+            width: 100%;
+            padding: .5rem;
+            margin-bottom: 1rem;
+            border: 1px solid rgb(132, 0, 165); 
+            outline: none;
+            border-radius: .5rem;
+        }
+        #btn {
+            position: relative;
+            top: -1rem;
+            padding: .5rem;
+            border: 1.5px solid rgb(132, 0, 165);
+            border-radius: .5rem;
+            cursor: pointer;
+            color: rgb(132, 0, 165);
+            font-weight: bold;
+            transition: .2s ease-in;
+        }
+        #btn:hover {
+            background-color: rgb(132, 0, 165);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <h3>Simple ExpressJS Project from NPM</h3>
+    <form action="/" method="post">
+        <div class="top">
+            <input id="numberOne" type="text" name="num1" placeholder="First Number">
+            <input id="numberTwo" type="text" name="num2" placeholder="Second Number">
+        </div>
+        <div class="bot">
+            <button id="btn" type="submit" name="submit">Calculate</button>
+        </div>
+    </form>
+</body>
+</html>
